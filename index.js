@@ -1,3 +1,5 @@
+"use strict";
+
 const fetch = require('node-fetch');
 const composeDictionaryEntry = require('./utils/composeDictionaryEntry.js');
 const fs = require('fs');

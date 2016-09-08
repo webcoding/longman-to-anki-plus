@@ -1,3 +1,5 @@
+"use strict";
+
 const cheerio = require('cheerio');
 
 module.exports = function(body) {
@@ -48,7 +50,7 @@ module.exports = function(body) {
   function composeDictionaryEntry() {
     var dictionaryEntry = '';
 
-    for (i = 0; i < $('.EXAMPLE').length; i++) {
+    for (var i = 0; i < $('.EXAMPLE').length; i++) {
       dictionaryEntry += composeCard(i);
     };
 
